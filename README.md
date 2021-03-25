@@ -1,4 +1,4 @@
-# Twitch-Follow-Bot by NightfallGT
+## Twitch Follow Bot by NightfallGT
 ## About
 This tool automates following a desired Twitch channel. To use this tool, Twitch oAuth tokens are required, and need to be pasted in the config/oauth_tokens.txt file. 
 This tool demonstrates how Twitch follow-botting works and how the Twitch API can be abused. 
@@ -25,7 +25,7 @@ the installation.
 ```python main.py``` in cmd to run
 
 ## Tutorial
-To get oAuth tokens you can use the converter in the tool. Simply paste the Twitch accounts you want to convert to oAuth tokens in username:password format in ```config/convert.txt```. Most of the time, this may not work because captcha may be required.
+To get oAuth tokens you can use the converter in the tool. Simply paste the Twitch accounts you want to convert to oAuth tokens in username:password format in ```config/convert.txt```. The output tokens can be found in ```output/oauth_tokens.txt```. Most of the time, this may not work because captcha may be required.
 
 To get oAuth tokens manually, open Chrome dev tools (Ctrl + Shift +I ), head over to the Network tab, follow any twitch account, inspect the http post request (gql) , and check the Authorization header for the token. Copy the whole text after OAuth.
 
