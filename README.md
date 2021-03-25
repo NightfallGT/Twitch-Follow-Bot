@@ -1,6 +1,4 @@
-# Twitch-Follow-Bot
-## a Follow bot for Twitch
-
+# Twitch-Follow-Bot by NightfallGT
 ## About
 This tool automates following a desired Twitch channel. To use this tool, Twitch oAuth tokens are required, and need to be pasted in the config/oauth_tokens.txt file. 
 This tool demonstrates how Twitch follow-botting works and how the Twitch API can be abused. 
