@@ -12,7 +12,7 @@ and should be used for EDUCATIONAL PURPOSES only.
 ## Preview
 ![Picture](https://i.ibb.co/YkdSg4C/Screenshot-358.png)
 
-## How to use
+## Setup
 - Python must be installed
 
 1. If you dont have python installed, download python 3.7.6
@@ -25,5 +25,17 @@ the installation.
 
 4.  Make sure you are in the same directory as the folder you downloaded it in.  Type
 ```python main.py``` in cmd to run
+
+## Tutorial
+To get oAuth tokens you can use the converter in the tool. Simply paste the Twitch accounts you want to convert to oAuth tokens in username:password format in ```config/convert.txt```. Most of the time, this may not work because captcha may be required.
+
+To get oAuth tokens manually, open Chrome dev tools (Ctrl + Shift +I ), head over to the Network tab, follow any twitch account, inspect the http post request (gql) , and check the Authorization header for the token. Copy the whole text after OAuth.
+
+![get oauth](https://user-images.githubusercontent.com/75003671/112411090-45f09d00-8d57-11eb-8922-188876cc00ad.gif)
+
+## Legal
+The software designed to perform website security testing.
+The author is not responsible for any illegal use of these programs.
+This is 100% educational, please do not misuse this tool.
 
 
