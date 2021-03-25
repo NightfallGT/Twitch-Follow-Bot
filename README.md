@@ -3,7 +3,7 @@
 
 ## About
 This tool automates following a desired Twitch channel. To use this tool, Twitch oAuth tokens are required, and need to be pasted in the config/oauth_tokens.txt file. 
-speed. This tool demonstrates how Twitch follow-botting works and how the Twitch API can be abused. 
+This tool demonstrates how Twitch follow-botting works and how the Twitch API can be abused. 
 
 Follow-botting is when a channel is followed by a number of fake accounts. These accounts are usually controlled by a computer or script, such as this one. 
 Artificial engagement and botting limit growth opportunities for legitimate broadcasters and it violates Twitch policies. This tool demonstrates how a follow-bot works
