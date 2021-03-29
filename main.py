@@ -91,10 +91,14 @@ class Twitch:
             logging.error(r.text)
         
         else:
-            followed_user = r.json()[0]['data']['followUser']['follow']['user']
-            logging.debug('Success!')
-            logging.info('Followed %s ID: %s' % (followed_user['displayName'], followed_user['id']))
-            return True
+            try:
+                followed_user = r.json()[0]['data']['followUser']['follow']['user']
+                logging.debug('Success!')
+                logging.info('Followed %s ID: %s' % (followed_user['displayName'], followed_user['id']))
+                return True
+            except Exception as e:
+                logging.error('Error in following user.')
+                logging.warning(e)
 
         return False
 
@@ -108,9 +112,13 @@ class Twitch:
             logging.error(r.text)
 
         else:
-            reqid = r.json()[0]['extensions']['requestID']
-            logging.info('Unfollowed user [requestID: %s]'% reqid )
-            return True
+            try:
+                reqid = r.json()[0]['extensions']['requestID']
+                logging.info('Unfollowed user [requestID: %s]'% reqid )
+                return True
+            except Exception as e:
+                logging.error('Error in unfollowing user.')
+                logging.warning(e)
 
         return False
 class Converter(Twitch):
