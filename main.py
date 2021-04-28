@@ -240,7 +240,7 @@ def logic():
         print('Invalid Choice')
 
 def main():
-    os.system('title Twitch Follow Bot ^| by NightfallGT')
+    os.system('title [Twitch Follow Bot] ^| NightfallGT')
     clear()
     print(title())
     print(menu())
